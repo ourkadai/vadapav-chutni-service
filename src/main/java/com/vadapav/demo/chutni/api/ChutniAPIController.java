@@ -5,8 +5,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ChutniAPIController {
+
+    enum Chutni {
+        CHILLI,
+        MINT
+    }
+      
+
     @GetMapping("/api/chutni")
-    String all() {
-        return "Red";
+    Chutni all() {
+        return Chutni.CHILLI;
     }
 }
