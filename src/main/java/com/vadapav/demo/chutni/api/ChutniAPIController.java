@@ -14,6 +14,6 @@ public class ChutniAPIController {
 
     @GetMapping("/api/chutni")
     Chutni all() {
-        return Chutni.CHILLI;
+        return Chutni.MINT;
     }
 }
